@@ -1,0 +1,77 @@
+/* Navbar Container */
+.navbar {
+    background-color: #007bff;
+    padding: 10px ;  /* Increased padding for height */
+   
+    display: flex;
+    justify-content: space-around;  /* Distribute items across the full width */
+    align-items: center;
+    border-bottom: 2px solid #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;  /* Full width */
+   
+  }
+  
+  /* Navbar Links */
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;  /* Increased gap between links */
+    width: 100%;
+    justify-content: space-around;  /* Evenly distribute links */
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;  /* Slightly larger font */
+    padding: 10px 20px;  /* Increased padding for larger clickable area */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+  }
+  
+  .active {
+    background-color: #0056b3;
+  }
+  
+  /* Profile Icon */
+  .profile-icon {
+    width: 28px;  /* Slightly larger icon */
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Navbar Animation */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .navbar {
+    animation: slideIn 0.5s ease;
+  }
+  

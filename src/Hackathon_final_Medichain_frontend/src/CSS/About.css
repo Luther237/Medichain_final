@@ -1,0 +1,108 @@
+/* App.css */
+
+/* About Us Container */
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    color: #003366;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .about-us-hero {
+    background-image: url("../img/photo_2024-08-23_23-28-14.jpg"); /* Blue background */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  
+  .about-us-hero h1 {
+    color: #f0f8ff;
+    font-size: 48px;
+    margin-bottom: 10px;
+     
+    span{
+      color: #007bff;
+    }
+  }
+  
+  .about-us-hero p {
+    font-size: 18px;
+  }
+  
+  /* Content Sections */
+  .about-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-us-content section {
+    margin-bottom: 40px;
+  }
+  
+  /* Mission Section */
+  .about-us-mission h2,
+  .about-us-values h2,
+  .about-us-team h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-mission p,
+  .about-us-values p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Values Section */
+  .values-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .value-item {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .value-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .value-item p {
+    font-size: 16px;
+  }
+  
+  /* Team Section */
+  .team-members {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .team-member {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0%;
+    margin-bottom: 15px;
+  }
+  
+  .team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    color: #007bff; /* Blue text */
+  }
+  

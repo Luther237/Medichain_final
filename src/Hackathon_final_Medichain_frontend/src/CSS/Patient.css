@@ -1,0 +1,151 @@
+/* Container Styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Form Styles */
+.form-container {
+  width: 60%;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  margin-right: 20px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.title {
+  flex: 1;
+}
+
+.title-text {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+input:read-only, select:disabled, textarea:read-only {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.emergency-section {
+  margin-top: 20px;
+}
+
+.sub-title {
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+.download-button {
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.download-button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* Right Panel Styles */
+.right-panel {
+  width: 35%;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.page-header input {
+  width: 48%;
+}
+
+.page-body {
+  margin-top: 20px;
+}
+
+.page-body .input-group {
+  margin-bottom: 20px;
+}
+
+.page-body .input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-area {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .form-container, .right-panel {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}

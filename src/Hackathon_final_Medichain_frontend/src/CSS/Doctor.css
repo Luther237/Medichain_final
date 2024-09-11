@@ -1,0 +1,69 @@
+/* Welcome Page Styles */
+.welcome-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #edf0f4 0%, #62c9e2 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .logo-container {
+    position: relative;
+    animation: pulse 2s infinite ease-in-out;
+    
+  }
+  
+  .welcome-logo {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .welcome-title {
+    font-size: 48px;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* CSS Animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Particle Effect */
+  .welcome-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    opacity: 0.7;
+    animation: rotate 30s infinite linear;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

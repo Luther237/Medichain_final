@@ -1,0 +1,91 @@
+/* App.css */
+
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f4f8; /* Light blue background */
+  }
+  
+  .dashboard-container h1 {
+    color: #003366; /* Dark blue text */
+    margin-bottom: 20px;
+  }
+  
+  .add-appointment-btn {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-appointment-btn:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+  }
+  
+  .appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .appointment-table th,
+  .appointment-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .appointment-table th {
+    background-color: #007bff; /* Blue header background */
+    color: white;
+    text-align: left;
+  }
+  
+  .appointment-table tr:nth-child(even) {
+    background-color: #e6f0ff; /* Light blue for even rows */
+  }
+  
+  .appointment-table tr:hover {
+    background-color: #cce5ff; /* Slightly darker blue for hover */
+  }
+  
+  .edit-btn {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+  }
+  
+  .delete-btn {
+    background-color: #dc3545; /* Red background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333; /* Darker red for hover */
+  }
+  

@@ -1,0 +1,242 @@
+/* General container style */
+.container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent any scrolling on the main container */
+  background-color: #f7f7f7; /* Soft background for overall page */
+  font-family: Arial, sans-serif; /* Standardize font */
+}
+
+/* Left section styles */
+.left-section {
+  flex: 0 0 300px; /* Fixed width for left section */
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a shadow for separation */
+  overflow-y: auto; /* Scrollable content */
+  max-height: 100vh; /* Prevent exceeding viewport height */
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.left-section .header {
+  margin-bottom: 20px;
+  text-align: center; /* Align header content */
+}
+
+.left-section .image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #ccc; /* Slight border around image */
+}
+
+.left-section .title h1 {
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center; /* Center title */
+  color: #333; /* Darker text for better readability */
+}
+
+.left-section .title p {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+.left-section .input-group {
+  margin-bottom: 15px;
+}
+
+.left-section .input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.left-section .input-group input,
+.left-section .input-group select {
+  width: calc(100% - 22px); /* Full width minus padding and border */
+  padding: 10px; /* More padding for better UI */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Larger input text */
+}
+
+/* Right section styles */
+.right-section {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.right-section .diagnostic-form {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-section .form-header {
+  display: flex;
+  flex-wrap: wrap; /* Allow inputs to wrap if needed */
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.right-section .parameter-input,
+.right-section .date-input {
+  flex: 1 1 calc(25% - 20px); /* Flexible width for inputs */
+  margin-right: 10px; /* Space between inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Adjust font size for inputs */
+}
+
+.right-section .date-input {
+  margin-right: 0; /* Remove margin for last input in row */
+}
+
+/* Tabs and tab buttons */
+.tabs {
+  margin-bottom: 15px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.tab-button:hover {
+  background-color: #0056b3; /* Darken on hover */
+}
+
+/* Form section for each tab */
+.form-section {
+  margin-top: 10px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Add button styling */
+.add-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Consultation container styles */
+.consultation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack input and button vertically */
+  height: 100vh; /* Full height of the viewport */
+  text-align: center;
+}
+
+/* Consultation form styles */
+.consultation-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-patient-id {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px; /* Slightly wider for input */
+}
+
+.search-btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Medical Dossier styles */
+.dossier-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dossier-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dossier-container section {
+  margin-bottom: 20px;
+}
+
+.dossier-container p {
+  margin: 5px 0;
+}
+
+.dossier-container p strong {
+  font-weight: bold;
+}
+
+.dossier-container button {
+  text-decoration: underline;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.dossier-container button:hover {
+  color: darkblue;
+}
