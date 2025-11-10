@@ -1,3 +1,6 @@
+[![trophy](https://github-profile-trophy.vercel.app/?username=Luther237)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=Luther237)](https://github.com/ryo-ma/github-profile-trophy)
+
 # `Hackathon_final_Medichain`
 
 Welcome to your new `Hackathon_final_Medichain` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
